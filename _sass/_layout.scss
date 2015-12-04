@@ -203,6 +203,15 @@
     > li {
         margin-bottom: $spacing-unit;
     }
+
+    h2 {
+        display: inline-block;
+    }
+
+    span {
+        display: inline-block;
+        color: #82821E;
+    }
 }
 
 .post-meta {
