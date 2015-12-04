@@ -2,12 +2,28 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
-
+    height: 170px;
     // Positioning context for the mobile navigation icon
     position: relative;
+}
+
+.header-background {
+    border-top: 5px solid $grey-color-dark;
+    border-bottom: 1px solid $grey-color-light;
+    background: url("/assets/layout/background_header.jpg") 50% 50% no-repeat;
+    height: 90px;
+}
+
+.avatar {
+    background: url("/assets/layout/oroboros.png") 50% #FFF no-repeat;
+    background-size: 110px 110px;
+    border: 2px solid #FFF;
+    left: 50%;
+    height:110px;
+    width:110px;
+    position: absolute;
+    border-radius: 50%;
+    top:45px;
 }
 
 .site-title {
@@ -17,17 +33,22 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    position:relative;
+    left:50%;
+    top:50px;
 
     &,
     &:visited {
         color: $grey-color-dark;
     }
 }
-
 .site-nav {
-    float: right;
-    line-height: 56px;
-
+    width:calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align:right;
     .menu-icon {
         display: none;
     }

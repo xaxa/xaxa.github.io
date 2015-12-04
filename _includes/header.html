@@ -1,9 +1,5 @@
 <header class="site-header">
-
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
+  <div class="header-background">
     <nav class="site-nav">
       <a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">
@@ -20,8 +16,10 @@
           {% endif %}
         {% endfor %}
       </div>
-    </nav>
-
+  </nav>
   </div>
-
+  <div class="wrapper">
+    <figure class="avatar"></figure>
+    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+  </div>
 </header>
