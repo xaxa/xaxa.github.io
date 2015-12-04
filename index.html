@@ -9,6 +9,10 @@ layout: custom
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2> 
+        <span>{{post.categories}}</span>
         <span class="post-meta">
           {% assign m = post.date | date: "%-m" %}
           {{ post.date | date: "%-d " }}
@@ -26,11 +30,8 @@ layout: custom
             {% when '11' %}Novembro
             {% when '12' %}Dezembro
           {% endcase %}
-          {{ post.date | date: "%Y" }}</span> - 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>  
-    
+          {{ post.date | date: "%Y" }}
+        </span> 
       </li>
     {% endfor %}
   </ul>

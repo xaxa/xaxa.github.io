@@ -206,11 +206,18 @@
 
     h2 {
         display: inline-block;
+        margin-bottom: 0;
     }
 
     span {
         display: inline-block;
         color: #82821E;
+    }
+
+    span.post-meta {
+        display: block;
+        font-size: 12px;
+        margin: -2px 0 0 10px;
     }
 }
 
