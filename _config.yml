@@ -17,3 +17,5 @@ github_username:  xaxa
 
 # Build settings
 markdown: kramdown
+
+timezone: America/Sao_Paulo
