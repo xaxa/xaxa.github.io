@@ -13,7 +13,7 @@ author:
   twitter: xaxa
   # disqus: your_disqus_username
 
-# google_analytics: 'UA-XXXXXXXX-X'
+google_analytics: 'UA-9631196-1'
 
 # Build settings
 markdown: kramdown
