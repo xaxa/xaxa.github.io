@@ -8,6 +8,11 @@ title: Blog
         <li class="post-teaser">
             <a href="{{ post.url | prepend: site.baseurl }}">
                 <span class="post-teaser__title">{{ post.title }}</span>
+                <span class="post-category-icon">
+					{% for category in post.categories %}
+			          	<img class="category-icon" src="/assets/images/icons/{{category}}.png">
+			    	{% endfor %}
+                </span>
                 <span class="post-teaser__date">
 					{% assign m = post.date | date: "%-m" %}
 					{{ post.date | date: "%-d " }}

@@ -163,6 +163,16 @@ strong {
 .list-posts {
     list-style-type: none;
     padding: 0px;
+
+    .post-category-icon {
+        display: inline-block;
+    }
+}
+
+.category-icon {
+    display: inline-block;
+    margin: 0 auto;
+    height:16px;
 }
 
 .post-teaser {
