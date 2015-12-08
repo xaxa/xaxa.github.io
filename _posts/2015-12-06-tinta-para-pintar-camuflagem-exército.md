@@ -1,5 +1,5 @@
 ---
-layout: custom
+layout: post
 title: Tinta para pintar camuflagem exército
 categories: [pintura, miniatura, hobby]
 tags: []

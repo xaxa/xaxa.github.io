@@ -1,38 +1,16 @@
 ---
-layout: custom
+layout: page
+title: Blog
+subtitle: Hitchhiker's guid to web development
 ---
 
-<div class="home">
-
-  <!--<h1 class="page-heading">Posts</h1>-->
-
-  <ul class="post-list">
+<ul class="list-posts">
     {% for post in site.posts %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2> 
-        <span>{{post.categories}}</span>
-        <span class="post-meta">
-          {% assign m = post.date | date: "%-m" %}
-          {{ post.date | date: "%-d " }}
-          {% case m %}
-            {% when '1' %}Janeiro
-            {% when '2' %}Fevereiro
-            {% when '3' %}Março
-            {% when '4' %}Abril
-            {% when '5' %}Maio
-            {% when '6' %}Junho
-            {% when '7' %}Julho
-            {% when '8' %}Agosto
-            {% when '9' %}Setembro
-            {% when '10' %}Outubro
-            {% when '11' %}Novembro
-            {% when '12' %}Dezembro
-          {% endcase %}
-          {{ post.date | date: "%Y" }}
-        </span> 
-      </li>
+        <li class="post-teaser">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+                <span class="post-teaser__title">{{ post.title }}</span>
+                <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
+            </a>
+        </li>
     {% endfor %}
-  </ul>
-</div>
+</ul>
