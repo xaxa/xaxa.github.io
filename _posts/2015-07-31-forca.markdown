@@ -2,7 +2,8 @@
 layout: post
 title:  "Força"
 date:   2015-07-31 22:30:59 -0200
-categories: texto
+categories: [texto]
+tags: [texto]
 ---
 Volta e meia ouço alguém falar sobre a força que algumas pessoas tem, o quão forte alguém é. Geralmente falam disso de pessoas que parecem inquebráveis e eu não concordo com essa visão.
 

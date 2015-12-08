@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Tinta para pintar camuflagem exército
-categories: [pintura, miniatura, hobby]
-tags: []
+categories: [pintura, hobby]
+tags: [miniatura, pintura, boddy]
 published: True
 ---
 

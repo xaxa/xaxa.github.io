@@ -121,19 +121,29 @@ strong {
 /* =Titles */
 .page-title {
     margin-top:100px;
-    margin-bottom:125px;
+    margin-bottom:65px;
     text-align: center;
 }
 
 .page-title__text {
     font-weight: 700;
     font-size: 70px;
+
+    a {
+        color:#000
+    }
 }
 
 .page-title__subtitle {
     font-weight: 400;
     font-size: 22px;
     color: $cloudy;
+}
+
+.category-subtitle{
+    font-weight: 400;
+    font-size: 22px;
+    color: $cloudy;   
 }
 
 .post-title {
